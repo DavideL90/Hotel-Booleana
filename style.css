@@ -1,55 +1,74 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* STRUTTURA CONTAINER */
-#page-container{
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px 50px auto auto;
-  grid-template-areas: "header header header";
-}
-
 /* HEADER */
 header{
   display: flex;
-  justify-content: space-around;
-  grid-area: header;
+  justify-content: space-between;
   height: 100px;
   background-color: #ECFAFB;
-  font-family: 'Courgette', cursive;
-  font-size: 32px;
+  font-family: 'Italianno', cursive;
+  font-size: 42px;
 }
 .logo-container{
   display: flex;
   align-items: center;
+  margin-left: 5%;
 }
 .logo-container img{
   width: 100px;
 }
-#menu-list{
-  width: 70%;
+.menu-list{
+  width: 60%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+.list-item{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 2s;
 }
 .list-item a{
   text-decoration: none;
-    color: black;
+  color: black;
+  padding: 0 5px;
+  transition: color 2s;
 }
-.list-item a:hover{
-  color: red;
+.list-item:hover{
+  background-color:rgba(0, 0, 0 , 0.2);
 }
 #languages-choice{
   display: flex;
   align-items: flex-start;
+  margin-right: 1%;
+}
+#languages-choice a{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5px;
 }
 #languages-choice img{
-  width: 30px;
-  margin: 10px;
+  width: 20px;
+  margin: 0 5px 0;
 }
 
 /* MAIN */
+main #hotel-container{
+  background-image: url("img/main-image.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#hotel-container #overlay{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#hotel-container #overlay h1{
+  margin: 0;
+  font-size: 120px;
+  font-family: 'Italianno', cursive;
+  color: white;
+  padding: 15%  0;
+}
+#special-offers{
+  grid-row-start: 4;
+}
