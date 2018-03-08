@@ -96,11 +96,35 @@ main .hotel-container{
 .form-contacts{
   background-color: #4AA6B5;
 }
-.form-cnt{
-  padding: 50px 0;
+.form-cnt, .contacts-cnt{
+  padding: 50px 2%;
 }
-.form-cnt h4{
+.form-cnt h4, .contacts-cnt h4{
   margin-top: 0;
   font-family: 'Italianno', cursive;
   font-size: 40px;
+}
+
+/* FORM */
+.form-cnt label, .contacts-cnt label{
+  padding: 10px 0;
+}
+.form-cnt input, select, textarea{
+  width: 100%;
+  height: 30px;
+}
+.form-cnt #note{
+  vertical-align: text-top;
+  height: 100px;
+}
+
+/* CONTATTI */
+.contacts-cnt .contactfield{
+  height: 30px;
+  font-size: 18px;
+}
+.contacts-cnt .fa-facebook-square{
+  color: #4267B2;
+  font-size: 32px;
+  line-height: 30px;
 }

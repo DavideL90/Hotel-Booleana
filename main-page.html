@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <title>Hotel Booleana</title>
   </head>
   <body>
@@ -22,6 +23,9 @@
         </div>
         <div class="list-item">
           <a href="#prenotazioni">Prenotazioni</a>
+        </div>
+        <div class="list-item">
+          <a href="#contatti">Contatti</a>
         </div>
         <div class="list-item">
           <a href="#">Prezzi</a>
@@ -56,22 +60,89 @@
         </div>
       </div>
       <div class="row form-contacts">
-        <div class="form-cnt col-lg-6 text-center">
+        <div class="form-cnt col-md-6">
           <a name="prenotazioni"><h4>Prenotazioni</h4></a>
-          <form class="" action="index.html" method="get">
-            <input type="text" name="nome" placeholder="Nome" required>
-            <input type="text" name="cognome" placeholder="Cognome" required>
-            <input type="number" name="bambini" placeholder="Bambini" required>
-            <select name="pensione" required>
-              <option value="opt1">Mezza pensione</option>
-              <option value="opt2">Pensione completa</option>
-            </select>
-            <input type="date" name="arrivo" placeholder="Data di arrivo">
-            <input type="date" name="parteza" placeholder="Data di partenza">
+          <form action="index.html" method="get">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="">
+                  <label for="nome">Nome</label>
+                </div>
+                <input id="nome"type="text" name="nome" required>
+                <div class="">
+                  <label for="cognome">Cognome</label>
+                </div>
+                <input id="cognome" type="text" name="cognome" required>
+                <div class="">
+                  <label for="bambini">Bambini</label>
+                </div>
+                <input id="bambini" type="number" name="bambini" required>
+                <div class="">
+                  <label for="telefono">Telefono</label>
+                </div>
+                <input id="telefono" type="number" name="telefono" required>
+              </div>
+              <div class="col-md-6">
+                <div class="">
+                  <label for="email">E-mail</label>
+                </div>
+                <input id="email" type="email" name="e-mail" required>
+                <div class="">
+                  <label for="pensione">Pensione</label>
+                </div>
+                <select id="pensione" name="pensione" required>
+                  <option value="opt1">Mezza pensione</option>
+                  <option value="opt2">Pensione completa</option>
+                </select>
+                <div class="">
+                  <label for="arrivo">Data di arrivo</label>
+                </div>
+                  <input id="arrivo" type="date" name="arrivo">
+                <div class="">
+                  <label for="partenza">Data di partenza</label>
+                </div>
+                <input id="partenza" type="date" name="parteza" required>
+              </div>
+            </div>
+            <div>
+              <label for="note">Note aggiuntive</label>
+            </div>
+            <textarea id="note" name="note" rows="8" cols="80"></textarea>
           </form>
         </div>
-        <div class="contacts-cnt col-lg-6">
-          prova
+        <div class="contacts-cnt col-md-6">
+          <a name="contatti"><h4>Contatti</h4></a>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="">
+                <label>Indirizzo</label>
+              </div>
+              <div class="contactfield">
+                Via booleana, 45 - Booleanopoli - Italy
+              </div>
+              <div class="">
+                <label>Telefono</label>
+              </div>
+              <div class="contactfield">
+                055/335566989
+              </div>
+              <div class="">
+                <label>E-mail</label>
+              </div>
+              <div class="contactfield">
+                booleanhotel@booleanmail.bool
+              </div>
+              <div class="">
+                <label>Facebook page</label>
+              </div>
+              <div class="contactfield">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+              </div>
+            </div>
+            <div class="map-cnt col-md-6">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d89527.0634379263!2d9.047673563194556!3d45.475429298107045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle+maps!5e0!3m2!1sit!2sit!4v1520507797801" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </main>
