@@ -128,3 +128,27 @@ main .hotel-container{
   font-size: 32px;
   line-height: 30px;
 }
+
+/* BANNER */
+.banner{
+  background-color: #81CBC8;
+}
+.banner .ad{
+  display: flex;
+  justify-content: center;
+  padding: 15px 15px;
+}
+.banner img{
+  max-width: 728px;
+  max-height: 90px;
+}
+
+/* FOOTER */
+footer{
+  background-color: #ECFAFB;
+}
+footer .copyrights{
+  padding: 15px 0;
+  font-size: 16px;
+  font-style: italic;
+}
