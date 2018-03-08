@@ -4,48 +4,76 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
     <title>Hotel Booleana</title>
   </head>
   <body>
-  <header>
-    <div class="logo-container">
-      <img src="img/hotel-logo.png">
-    </div>
-    <div class="menu-list">
-      <div class="list-item">
-          <a href="#">Gallery</a>
+  <header class="container-fluid">
+    <div class="row">
+      <div class="logo-container">
+        <img src="img/hotel-logo.png">
       </div>
-      <div class="list-item">
-        <a href="#">Ristorante</a>
+      <div class="menu-list">
+        <div class="list-item">
+            <a href="#">Gallery</a>
+        </div>
+        <div class="list-item">
+          <a href="#">Ristorante</a>
+        </div>
+        <div class="list-item">
+          <a href="#prenotazioni">Prenotazioni</a>
+        </div>
+        <div class="list-item">
+          <a href="#">Prezzi</a>
+        </div>
       </div>
-      <div class="list-item">
-        <a href="#">Prenotazioni</a>
+      <div id="languages-choice">
+        <a href="#"><img src="img/flags/italy.png"></a>
+        <a href="#"><img src="img/flags/england.png"></a>
+        <a href="#"><img src="img/flags/germany.png"></a>
+        <a href="#"><img src="img/flags/french.png"></a>
       </div>
-      <div class="list-item">
-        <a href="#">Prezzi</a>
-      </div>
-    </div>
-    <div id="languages-choice">
-      <a href="#"><img src="img/flags/italy.png"></a>
-      <a href="#"><img src="img/flags/england.png"></a>
-      <a href="#"><img src="img/flags/germany.png"></a>
-      <a href="#"><img src="img/flags/french.png"></a>
     </div>
   </header>
-    <div class="row">
-      <main class="col-md-12">
-        <div id="hotel-container">
-          <div id="overlay">
-            <h1>Welcome to Hotel Booleana</h1>
-          </div>
+    <main class="container-fluid">
+      <div class="row hotel-container">
+        <div id="overlay">
+          <h1>Welcome to Hotel Booleana</h1>
         </div>
-      </main>
-    </div>
-
-    <div id="special-offers">
-    </div>
-  </div>
+      </div>
+      <div class="row special-offers text-center">
+        <h2>Offerte last minute</h2>
+      </div>
+      <div class="row special-offers">
+        <div class="offers-cnt col-lg-4 col-lg-offset-0 col-xs-6 col-xs-offset-3">
+          <a href="#"><img class="img-responsive" src="img/last-minute.jpg"></a>
+        </div>
+        <div class="offers-cnt col-lg-4 col-lg-offset-0 col-xs-6 col-xs-offset-3">
+          <a href="#"><img class="img-responsive" src="img/last-minute.jpg"></a>
+        </div>
+        <div class="offers-cnt col-lg-4 col-lg-offset-0 col-xs-6 col-xs-offset-3">
+          <a href="#"><img class="img-responsive" src="img/last-minute.jpg"></a>
+        </div>
+      </div>
+      <div class="row form-contacts">
+        <div class="form-cnt col-lg-6 text-center">
+          <a name="prenotazioni"><h4>Prenotazioni</h4></a>
+          <form class="" action="index.html" method="get">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="text" name="cognome" placeholder="Cognome" required>
+            <input type="number" name="bambini" placeholder="Bambini" required>
+            <select name="pensione" required>
+              <option value="opt1">Mezza pensione</option>
+              <option value="opt2">Pensione completa</option>
+            </select>
+            <input type="date" name="arrivo" placeholder="Data di arrivo">
+            <input type="date" name="parteza" placeholder="Data di partenza">
+          </form>
+        </div>
+        <div class="contacts-cnt col-lg-6">
+          prova
+        </div>
+      </div>
+    </main>
   </body>
 </html>
