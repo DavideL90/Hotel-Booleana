@@ -177,71 +177,6 @@ footer .copyrights{
   font-style: italic;
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 992px) {
-  header .riga{
-    font-size: 30px;
-  }
-
-  /* BLOCCO FORM */
-  .form-cnt, .contacts-cnt{
-    padding: 20px 2%;
-  }
-}
-
-@media (max-width: 798px){
-  /* HEADER */
-  header .riga{
-    height: 120px;
-  }
-  header .menu-list{
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  header .list-item{
-    width: calc(100% / 3);
-    height: 50px;
-    margin: auto;
-  }
-  header .list-item.last{
-    height: 100px;
-  }
-  header #languages-choice{
-    flex-direction: column;
-  }
-
-  /* MAIN */
-  /* BLOCCO FOTO */
-  .hotel-container #overlay h1{
-    font-size: 100px;
-    padding: 10%;
-  }
-}
-
-@media (max-width: 576px) {
-  header .menu-list{
-    display: none;
-  }
-  .small-menu{
-    display: flex;
-    align-self: center;
-    font-size: 50px;
-  }
-  .small-menu .fa-caret-down{
-    display: flex;
-    align-self: center;
-    margin-left: 10px;
-    font-size: 40px;
-  }
-  /* MAIN */
-  /* BLOCCO FOTO */
-  .hotel-container #overlay h1{
-    text-align: center;
-    font-size: 60px;
-    padding: 10%;
-  }
-}
-
 /* PAGINA GALLERY */
 body#gallery-page{
   background-color: #4AA6B5;
@@ -273,4 +208,117 @@ body#gallery-page{
 /* PAGINA PREZZI */
 body#price-page{
   background-color: #D6C481;
+}
+.table-price{
+  max-width: 1000px;
+  margin: 50px auto;
+  background: linear-gradient(to right top, #81CBC8, #ECFAFB)
+}
+.table-price *{
+  font-family: 'Italianno', cursive;
+  border: 1px solid black;
+}
+.table-price .table-title{
+  font-size: 55px;
+}
+.table-price .seasons{
+  font-size: 40px;
+}
+.seasons span{
+  font-size: 15px;
+  font-family: serif;
+  border: none;
+}
+.table-price .room-descr.first{
+  border-top: 1px solid black;
+}
+.table-price .room-descr{
+  transition: background-color 1s;
+}
+.table-price .room-descr:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.table-price .room-descr, .room-price{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  border-top: none;
+  display: flex;
+  justify-content: space-between;
+}
+.table-price .room-price{
+  width: 80px;
+  border: none;
+  border-left: 1px solid black;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+  header .riga{
+    font-size: 30px;
+  }
+
+  /* BLOCCO FORM */
+  .form-cnt, .contacts-cnt{
+    padding: 20px 2%;
+  }
+}
+@media (max-width: 798px){
+  /* HEADER */
+  header .riga{
+    height: 120px;
+  }
+  header .menu-list{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  header .list-item{
+    width: calc(100% / 3);
+    height: 50px;
+    margin: auto;
+  }
+  header .list-item.last{
+    height: 100px;
+  }
+  header #languages-choice{
+    flex-direction: column;
+  }
+
+  /* MAIN */
+  /* BLOCCO FOTO */
+  .hotel-container #overlay h1{
+    font-size: 100px;
+    padding: 10%;
+  }
+}
+@media (max-width: 576px) {
+  header .menu-list{
+    display: none;
+  }
+  .small-menu{
+    display: flex;
+    align-self: center;
+    font-size: 50px;
+  }
+  .small-menu .fa-caret-down{
+    display: flex;
+    align-self: center;
+    margin-left: 10px;
+    font-size: 40px;
+  }
+  /* MAIN */
+  /* BLOCCO FOTO */
+  .hotel-container #overlay h1{
+    text-align: center;
+    font-size: 60px;
+    padding: 10%;
+  }
+
+  /* PAGINA PREZZI */
+  .table-price .room-descr, .room-price{
+    font-size: 13px;
+  }
+  .table-price .room-price{
+    width: 60px;
+  }
 }
