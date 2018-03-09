@@ -207,11 +207,11 @@ body#gallery-page{
 
 /* PAGINA PREZZI */
 body#price-page{
-  background-color: #D6C481;
+  background-color: #4AA6B5;
 }
 .table-price{
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 100px auto;
   background: linear-gradient(to right top, #81CBC8, #ECFAFB)
 }
 .table-price *{
@@ -251,6 +251,24 @@ body#price-page{
   border-left: 1px solid black;
 }
 
+/* PAGINA LAST-MINUTE */
+body#last-minute{
+  background-color: #4AA6B5;
+}
+.last-minute-pic{
+  margin: 50px auto 20px;
+  max-width: 800px;
+}
+.last-minute-pic img{
+  max-width: 100%;
+}
+.last-minute-pic h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+}
+.last-minute-pic p{
+  text-align: justify;
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 992px) {
@@ -258,10 +276,10 @@ body#price-page{
     font-size: 30px;
   }
 
-  /* BLOCCO FORM */
-  .form-cnt, .contacts-cnt{
-    padding: 20px 2%;
-  }
+/* BLOCCO FORM */
+.form-cnt, .contacts-cnt{
+  padding: 20px 2%;
+}
 }
 @media (max-width: 798px){
   /* HEADER */
