@@ -207,16 +207,15 @@ body#gallery-page{
 
 /* PAGINA PREZZI */
 body#price-page{
-  background-color: #4AA6B5;
+  background: linear-gradient(to right top, #81CBC8, #ECFAFB);
 }
 .table-price{
   max-width: 1000px;
   margin: 100px auto;
-  background: linear-gradient(to right top, #81CBC8, #ECFAFB)
 }
 .table-price *{
   font-family: 'Italianno', cursive;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .table-price .table-title{
   font-size: 55px;
@@ -235,7 +234,7 @@ body#price-page{
 .table-price .room-descr{
   transition: background-color 1s;
 }
-.table-price .room-descr:hover{
+.table-price .room-descr.darker{
   background-color: rgba(0, 0, 0, 0.2);
 }
 .table-price .room-descr, .room-price{
@@ -248,7 +247,8 @@ body#price-page{
 .table-price .room-price{
   width: 80px;
   border: none;
-  border-left: 1px solid black;
+  display: inline-block;
+  text-align: right;
 }
 
 /* PAGINA LAST-MINUTE */
