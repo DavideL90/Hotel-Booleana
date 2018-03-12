@@ -155,6 +155,7 @@ main .hotel-container{
 }
 /* BANNER */
 .banner{
+  border: 1px solid black;
   background-color: #81CBC8;
 }
 .banner .ad{
@@ -163,8 +164,9 @@ main .hotel-container{
   padding: 15px 15px;
 }
 .banner img{
-  max-width: 728px;
-  max-height: 90px;
+  width: 728px;
+  height: 90px;
+
 }
 
 /* FOOTER */
